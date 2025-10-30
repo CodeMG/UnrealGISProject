@@ -1,0 +1,44 @@
+# Ignore build and binary files
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+
+# Ignore user-specific files
+*.suo
+*.user
+*.userprefs
+*.sln.docstates
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+
+# Ignore generated project files
+*.xcodeproj
+*.xcworkspace
+*.VC.db
+*.VC.VC.opendb
+
+# Ignore backup files
+*_Backup.*
+*.bak
+
+# Ignore temporary files
+Thumbs.db
+*.tmp
+*.log
+
+# Ignore plugins you don't want to track
+# (You can comment these out if your plugins are part of your project)
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# Ignore platform-specific files
+.DS_Store
+.idea/
+.vscode/
+
+# Optional: Ignore large content folders (if using Git LFS instead)
+# Content/
