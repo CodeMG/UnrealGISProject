@@ -22,9 +22,9 @@ On the ground view of the roads.
 
 ### Issues experienced in the process
 - Finding good data was difficult. Managed to find road data from https://www.bbbike.org/ (But this includes train tracks)
-- Exporting as .csv file from QGIS lead to a lot of datapoints for the roads (approx. 24.000 points), so I used a python script to remove redundant points (removed approx. 19.000 points) and made parsing in UE easier.
+- Exporting as .csv file from QGIS lead to a lot of datapoints for the roads (approx. 24.000 points), so I used a python script to remove redundant points (removed approx. 19.000 points) and made parsing in UE easier. (This is probably because of the datasource from BBBike. Found a different datasource that does not have this issue)
 - I failed to export the heightmap and the roads in a way that made matching them in UE easy. I had to move the roads manually in place to get it to work.
 - The exported roads are for some reason mirrored.
 - Tried to look for Satellite images to map onto the heightmap, but most free images are too low resolution.
 - Creating roads out of 5000 points is very computationally heavy, so only ended up using 2000 points. More optimization is needed.
-- Mapping the Roads on the heightmap is not easy, some roads pierce the ground, others hover slightly above it. (UEs own landscape spline system would probably be better.)
+- Mapping the Roads on the heightmap is not easy, some roads pierce the ground, others hover slightly above it. (UEs own landscape spline system does also not have a builtin "Snap to Landscape" mode for Blueprint generated splines. More work needs to be done here.)
