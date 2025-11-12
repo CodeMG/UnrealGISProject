@@ -28,3 +28,4 @@ On the ground view of the roads.
 - Tried to look for Satellite images to map onto the heightmap, but most free images are too low resolution.
 - Creating roads out of 5000 points is very computationally heavy, so only ended up using 2000 points. More optimization is needed.
 - Mapping the Roads on the heightmap is not easy, some roads pierce the ground, others hover slightly above it. (UEs own landscape spline system does also not have a builtin "Snap to Landscape" mode for Blueprint generated splines. More work needs to be done here.)
+- Added a drivable car by using the chaos modular vehicle plugin. While it does work, it is very unstable and does not drive well. One very likely reason for this is the fact that the scale of the world (and the car) is a bit off. Also the roads along the spline are not well connected and that causes issues.
